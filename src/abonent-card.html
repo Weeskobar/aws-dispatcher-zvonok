@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            width: 100%;
+        }
+        .info-panel, .call-pannel, .action-buttons{
+            display: flex;
+        }
+        .caller{
+            width: 70%;
+        }
+        .caller-actions{
+            flex: 1;
+        }
+        .caller-info{
+            width: 60%;
+        }
+        .company-info{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="call-pannel">
+            <div class="caller"> 
+                <p>Входящий от <span class="caller-number">+7(xxx) xxx-xx-xx</span></p>
+            </div>
+            <div class="caller-actions">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+        <div  class="info-panel">
+            <div class="caller-info">
+                    <h2 class="caller-name">имя клиента</h2>
+                <div class="phone-numbers">
+                    <p>Номера телефонов<span>(..)</span></p>
+                    <button><span class="caller-number">+7 (xxx) xxx-xx-xx</span></button>
+                </div>
+                <div class="adreses">
+                    <p>Адреса</p>
+                    <button>
+                        <p>Улица</p>
+                        <p>Подьезд/этаж</p>
+                        <p>Компания</p>
+                    </button>
+                </div>
+                <div class="caller-notification">
+                    <p>list</p>
+                    <hr>
+                    <table>
+                        <tr><th>№</th><th>Дата</th><th>Описание</th><th>Услуга</th><th>Исполнитель</th><th>Статус</th><th><button>настройки</button></th></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="company-info">
+                <h2>Название компании</h2>
+                <p>Полное наименование:</p>
+                <p>Фактический адрес:</p>
+                <p>Юридический адрес:</p>
+                <p>Телефон:</p>
+                <p>График работы:</p>
+                <p>Сайт:</p>
+                <p>Почта:</p>
+                <p>Реквизиты:</p>
+            </div>
+        </div>
+        <div class="action-buttons">
+            <div>
+                <button>открыть шлагбаум</button>
+                <button>гидроконтур</button>
+            </div>
+            <div>
+                <button>создать аварию</button>
+                <button>принять показания пу</button>
+                <button>создать обращение</button>
+            </div>
+        </div>
+    </div>
+    <script src="js\abonent-card.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Входящий звонок</title>
+    <style>
+        
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .call-box {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            animation: fadeIn 0.5s ease-in;
+        }
+        .caller-info {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border: 2px solid #e9ecef;
+        }
+
+        .caller-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .caller-number {
+            font-size: 18px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .call-button {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .answer-button {
+            background: #28a745;
+            color: white;
+        }
+
+        .answer-button:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .decline-button {
+            background: #dc3545;
+            color: white;
+        }
+
+        .decline-button:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+        }
+
+        .notification-button {
+            background: #ffc107;
+            color: #212529;
+        }
+
+        .notification-button:hover {
+            background: #e0a800;
+            transform: translateY(-2px);
+        }
+
+        .call-button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+  <div class="call-box">
+    <div class="caller-info">
+        <div class="caller-name">Имя звонящего</div>
+        <div class="caller-number">+7 (xxx) xxx-xx-xx</div>
+    </div>
+    
+    <div class="buttons-container">
+        <button class="call-button answer-button" id="answerBtn">
+            Ответить
+        </button>
+        <button class="call-button decline-button" id="declineBtn">
+            Отклонить
+        </button>
+        <button class="call-button notification-button" id="notificationBtn">
+            Создать оповещение
+        </button>
+    </div>
+  </div>
+    <script src="js/call-popup.js"></script>
+</body>
+</html>

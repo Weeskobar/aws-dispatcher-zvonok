@@ -1,0 +1,13 @@
+{
+  "name": "call-app",
+  "version": "1.0.0",
+  "description": "Приложение для звонков с всплывающим окном",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "devDependencies": {
+    "electron": "^latest"
+  }
+}
